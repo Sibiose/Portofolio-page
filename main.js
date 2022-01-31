@@ -26,8 +26,8 @@ window.addEventListener("load", (event) => {
 
   function navBarScroll() {
     if (
-      document.body.scrollTop > 700 ||
-      document.documentElement.scrollTop > 700
+      document.body.scrollTop > 670 ||
+      document.documentElement.scrollTop > 670
     ) {
       nav.style.backgroundColor = "#04323e";
       nav.style.height = "2.5rem";
@@ -57,8 +57,8 @@ window.addEventListener("load", (event) => {
     } else {
       menuIsOpen = false;
       if (
-        document.body.scrollTop > 700 ||
-        document.documentElement.scrollTop > 700
+        document.body.scrollTop > 670 ||
+        document.documentElement.scrollTop > 670
       ) {
         return;
       } else {
