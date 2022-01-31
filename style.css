@@ -1,0 +1,603 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*================= HEADER AND NAV =========================*/
+
+header {
+  background-image: url(images/header-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0rem;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 0rem 5rem;
+  transition: 0.3s;
+}
+
+.nav-li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 2rem;
+}
+.logo {
+  margin-right: auto;
+}
+
+.motto {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.hero-title {
+  /* margin-left: 15rem; */
+  margin-top: 6rem;
+  text-align: center;
+  max-width: 80%;
+}
+
+.slim {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.menu-line {
+  height: 2.4px;
+  background-color: white;
+  width: 1.5rem;
+  margin-top: 4px;
+  border-radius: 20px;
+}
+.hamburger-menu {
+  display: none;
+}
+.nav-ul-modal {
+  display: none;
+}
+.hide {
+  display: none;
+}
+/*================== ABOUT-ME SECTION ===============================*/
+
+#aboutme-section {
+  padding: 10rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.aboutme-wrapper {
+  min-width: 900px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1050px;
+}
+.aboutme-img {
+  width: 100%;
+  max-width: 450px;
+}
+.aboutme-details {
+  width: 46%;
+  margin-left: 5rem;
+  position: relative;
+}
+
+.img-wrapper {
+  width: 46%;
+  max-width: 450px;
+  position: relative;
+  margin-right: 5rem;
+}
+
+.aboutme-details::before {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 25%;
+  top: 0;
+  right: -5%;
+  border-top: #b49500 2px solid;
+  border-right: #b49500 2px solid;
+}
+
+.aboutme-details::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 25%;
+  bottom: -40px;
+  left: -40px;
+  border-bottom: #b49500 2px solid;
+  border-left: #b49500 2px solid;
+}
+
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-height: 585px;
+  min-height: 100%;
+  top: 40px;
+  left: -40px;
+  border: #b49500 2px solid;
+  z-index: -1;
+}
+.aboutme-proof {
+  font-size: 1.3rem;
+  color: #b49500;
+  font-weight: 700;
+}
+.emp {
+  font-weight: 700;
+}
+
+/*======================= Portofolio Section=======================*/
+
+#portofolio-section {
+  /* background-color: rgba(255, 241, 172, 0.17); */
+  background-color: rgba(255, 241, 172, 0.05);
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+/* #3e9ba0 */
+.grid-wrapper {
+  background-color: rgba(255, 241, 172, 0.05);
+  min-width: 850px;
+  width: 90%;
+  max-width: 1250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem 1.5rem;
+}
+
+.grid-area {
+  background-color: white;
+  border-radius: 15px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.grid-col-span2 {
+  grid-column: span 2;
+  padding: 1.5rem;
+  border: 1px solid #04323e;
+}
+.grid-col-span2-thumb {
+  grid-column: span 2;
+  border-radius: 15px;
+  border: none;
+}
+.portofolio-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  background-color: #04323e;
+  border: none;
+  margin: 0rem 0.7rem;
+}
+
+.portofolio-thumbnail {
+  height: 100%;
+  width: 100%;
+}
+.image-click {
+  cursor: pointer;
+}
+
+/* #ff6743; */
+
+/*====================== Footer ================================*/
+
+footer {
+  display: flex;
+  background-color: #04323e;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 5rem;
+}
+.social-media {
+  display: flex;
+}
+.icon {
+  width: 2rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg)
+    brightness(106%) contrast(106%);
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.logo-footer {
+  margin-right: auto;
+}
+.footer-link {
+  text-decoration: none;
+  margin-top: 0.8rem;
+}
+
+#scroll-top {
+  filter: invert(15%) sepia(19%) saturate(2176%) hue-rotate(147deg)
+    brightness(94%) contrast(97%);
+  position: fixed;
+  bottom: 7rem;
+  right: 1rem;
+  width: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.email {
+  font-size: 0.9rem;
+  color: white;
+  text-align: center;
+}
+.social-media-links {
+  display: flex;
+}
+.social-media-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/*=================== Typography ================================*/
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #b49500;
+}
+
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  border-bottom: #b49500 3px solid;
+  opacity: 0.7;
+}
+
+.linetrough {
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 2.4rem;
+  filter: blur(2px);
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 0;
+  transition: 0.3s;
+}
+.welcome {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+.front-end {
+  color: #b49500;
+}
+
+.aboutme-title {
+  color: #020114;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+
+.aboutme-name {
+  color: #020114;
+  font-size: 1.7rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+}
+
+.portofolio-btn {
+  color: #020114;
+}
+.page-link,
+.github-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer-heading {
+  color: white;
+}
+.logo-name {
+  color: white;
+}
+
+/*======================== MEDIA QUERIES =========================*/
+
+@media (max-width: 1050px) {
+  .aboutme-wrapper {
+    width: 90%;
+    min-width: 750px;
+  }
+  .img-wrapper {
+    margin-right: 2rem;
+    max-width: 370px;
+    transition: 0.3s;
+  }
+  .aboutme-details {
+    margin-left: 2rem;
+    max-width: 370px;
+    transition: 0.3s;
+  }
+  .aboutme-front-end {
+    font-size: 2rem;
+    transition: 0.3s;
+  }
+  .aboutme-title {
+    font-size: 2rem;
+    transition: 0.3s;
+  }
+  /*GRID 1050px*/
+  .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 700px;
+  }
+  .grid-col-span2 {
+    grid-column: span 1;
+  }
+  .grid-area {
+    max-height: none;
+  }
+  .grid-col-span2-thumb {
+    grid-column: span 1;
+    border: none;
+  }
+  .portofolio-title {
+    margin: 0rem;
+  }
+  .portofolio-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .portofolio-btn {
+    margin: 0.2rem 0rem;
+  }
+  .portofolio-body {
+    margin-top: 0.1rem;
+  }
+  .aboutme-details::after {
+    bottom: -30px;
+    left: -30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .aboutme-wrapper {
+    flex-direction: column;
+    max-width: 90%;
+    min-width: 500px;
+    transition: 1s;
+  }
+  .aboutme-details {
+    min-width: 100%;
+  }
+  .img-wrapper {
+    max-width: 150px;
+    position: absolute;
+    right: -3.4rem;
+    top: -2.5rem;
+  }
+  .aboutme-details::before {
+    display: none;
+  }
+  .img-wrapper::before {
+    top: -1rem;
+    left: 1rem;
+    z-index: 2;
+    border-bottom: none;
+    border-left: none;
+  }
+  .aboutme-details::after {
+    bottom: -20px;
+  }
+  .aboutme-title {
+    font-size: 1.4rem;
+    transition: 0.3s;
+  }
+  .aboutme-front-end {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 715px) {
+  /* =============== Hamburger menu=================*/
+
+  .logo {
+    margin-top: 1.3rem;
+  }
+  .nav-ul-modal {
+    top: 2rem;
+    right: 0;
+  }
+
+  .open-modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #04323e;
+    padding: 1rem 1rem;
+
+    align-items: center;
+    border: rgba(255, 255, 255, 0.1) 1px solid;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+  .nav-li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  nav {
+    padding: 0 2rem;
+    transition: 0.3s;
+  }
+  .hide {
+    display: none;
+  }
+
+  /* ===============================================*/
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+    min-width: 450px;
+  }
+
+  .footer-heading {
+    display: none;
+  }
+  .footer-link {
+    margin-top: 0;
+  }
+  .title {
+    font-size: 2.3rem;
+    transition: 0.3s;
+  }
+  .img-wrapper {
+    right: -2rem;
+    transition: 0.3s;
+  }
+
+  .grid-col-4 {
+    grid-row-start: 3;
+  }
+  .grid-col-8 {
+    grid-row-start: 7;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutme-wrapper {
+    min-width: 415px;
+    transition: 0.4s;
+  }
+  .front-end {
+    font-size: 1.7rem;
+    transition: inherit;
+  }
+  .aboutme-title {
+    font-size: 1.4rem;
+  }
+  .aboutme-front-end {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .img-wrapper {
+    top: -3rem;
+    right: -2.5rem;
+  }
+  .aboutme-details::after {
+    left: -15px;
+    bottom: 0px;
+  }
+  .img-wrapper::before {
+    top: -0.5rem;
+    left: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.9rem;
+    transition: inherit;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-footer {
+    margin: 0.5rem 0rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .grid-wrapper {
+    min-width: 300px;
+  }
+
+  .aboutme-details {
+    margin: 0 0;
+  }
+
+  .aboutme-wrapper {
+    min-width: 350px;
+  }
+  .aboutme-title {
+    font-size: 1.3rem;
+  }
+  .aboutme-front-end {
+    font-size: 1rem;
+  }
+  .aboutme-name {
+    font-size: 1.5rem;
+  }
+  .img-wrapper {
+    top: -3.4rem;
+  }
+  .aboutme-details::after {
+    left: -7px;
+    bottom: 10px;
+  }
+}
+
+/*875*/
+
+.color-nav {
+  background-color: #04323e;
+}
