@@ -58,7 +58,6 @@ nav {
 }
 
 .hero-title {
-  /* margin-left: 15rem; */
   margin-top: 6rem;
   text-align: center;
   max-width: 80%;
@@ -359,6 +358,14 @@ footer {
 }
 
 /*======================== MEDIA QUERIES =========================*/
+@media (min-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+  #aboutme-section {
+    height: 100%;
+  }
+}
 
 @media (max-width: 1050px) {
   .aboutme-wrapper {
