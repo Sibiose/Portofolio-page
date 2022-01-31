@@ -582,16 +582,16 @@ footer {
     min-width: 330px;
   }
   .aboutme-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .aboutme-front-end {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .aboutme-name {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .img-wrapper {
-    top: -3.4rem;
+    top: -4.5rem;
   }
   .aboutme-details::after {
     left: -7px;
