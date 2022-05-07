@@ -186,6 +186,7 @@ nav {
 .grid-area {
   background-color: white;
   border-radius: 15px;
+  min-height: 300px;
   max-height: 300px;
   display: flex;
   flex-direction: column;
